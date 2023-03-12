@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\DecisionClientController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('client');
 });
+
+//Route::post('/decision_client', [DecisionClientController::class, 'getClient']);
